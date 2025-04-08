@@ -1,0 +1,70 @@
+/* supplier-products.css */
+
+#supplier-products {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+#supplier-products h2 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5px;
+}
+
+#product-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+#product-list li {
+    padding: 8px 0;
+    border-bottom: 1px dotted #ccc;
+}
+
+#product-list li:last-child {
+    border-bottom: none;
+}
+
+#supplier-products h3 {
+    color: #555;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+#add-product-form {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+#add-product-form label {
+    font-weight: bold;
+}
+
+#add-product-form input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+#add-product-form button[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#add-product-form button[type="submit"]:hover {
+    background-color: #0056b3;
+}

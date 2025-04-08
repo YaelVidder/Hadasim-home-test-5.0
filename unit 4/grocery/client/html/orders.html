@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>הזמנות שלי</title>
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/orders.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="nav-container"></div>
+        <main id="content-container">
+            <div class="orders-header">
+                <div id="new-order-button-container">
+                </div>
+            </div>
+            <h1 class="orders-title">ההזמנות שלי</h1>
+            <div class="filters-container">
+                <div class="sort-by">
+                    <label for="sort-order">מיין לפי תאריך:</label>
+                    <select id="sort-order">
+                        <option value="">ברירת מחדל</option>
+                        <option value="oldest">ישן לחדש</option>
+                        <option value="newest">חדש לישן</option>
+                    </select>
+                </div>
+                <div class="filter-by-status">
+                    <label for="status-filter">סנן לפי סטטוס:</label>
+                    <select id="status-filter">
+                        <option value="">הכל</option>
+                        <option value="חדשה">חדשה</option>
+                        <option value="בתהליך">בתהליך</option>
+                        <option value="הושלמה">הושלמה</option>
+                    </select>
+                </div>
+            </div>
+            <div id="orders-list">
+            </div>
+        </main>
+        <div id="footer-container"></div>
+    </div>
+    <script src="../js/layout.js"></script>
+    <script src="../js/orders.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<link href="../css/login.css" rel="stylesheet" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>כניסה</title>
+</head>
+
+<body>
+    <div class="container">
+        <main>
+            <div class="form-container">
+                <h2>כניסה או הרשמה</h2>
+
+                <div id="login-section" class="form-section active">
+                    <form id="login-form">
+                        <label for="login-email">אימייל:</label>
+                        <input type="email" id="login-email" name="email" required placeholder="הכנס אימייל">
+
+                        <label for="login-password">סיסמה:</label>
+                        <input type="password" id="login-password" name="password" required placeholder="הכנס סיסמה">
+
+                        <button type="submit">התחברות ספק</button>
+                        <p class="toggle-link">אין לך חשבון? <a href="#" id="show-signup">הרשמה</a></p>
+                        <p class="toggle-link"><a href="#" id="show-admin-login">כניסת מנהל</a></p>
+                    </form>
+                </div>
+
+                <div id="signup-section" class="form-section">
+                    <form id="signup-form">
+                        <label for="signup-name">שם חברה:</label>
+                        <input type="text" id="signup-name" name="company_name" required placeholder="הכנס שם חברה">
+
+                        <label for="signup-phone">טלפון:</label>
+                        <input type="tel" id="signup-phone" name="phone_number" required placeholder="הכנס מספר טלפון"
+                            maxlength="10">
+
+                        <label for="signup-representative">שם נציג:</label>
+                        <input type="text" id="signup-representative" name="representative_name" required
+                            placeholder="הכנס שם נציג">
+
+                        <label for="signup-email">אימייל:</label>
+                        <input type="email" id="signup-email" name="email" required placeholder="הכנס אימייל">
+
+                        <label for="signup-password">סיסמה:</label>
+                        <input type="password" id="signup-password" name="password" required placeholder="הכנס סיסמה">
+
+                        <button type="submit">הרשמה</button>
+                        <p class="toggle-link">כבר יש לך חשבון? <a href="#" id="show-login">התחברות ספק</a></p>
+                    </form>
+                </div>
+
+                <div id="admin-login-section" class="form-section">
+                    <form id="admin-login-form">
+                        <label for="admin-password">סיסמת מנהל:</label>
+                        <input type="password" id="admin-password" name="admin_password" required
+                            placeholder="הכנס סיסמת מנהל">
+
+                        <button type="submit">התחברות מנהל</button>
+                        <p class="toggle-link"><a href="#" id="show-supplier-login">חזרה לכניסת ספק</a></p>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+
+</html>

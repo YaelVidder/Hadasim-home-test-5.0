@@ -1,0 +1,16 @@
+CRECREATE LOGIN grocery WITH PASSWORD = '123';
+CREATE USER grocery FOR LOGIN grocery;
+GRANT CONNECT SQL TO grocery;
+GRANT SELECT, INSERT, UPDATE, DELETE ON grocery.dbo.* TO grocery;
+
+
+USE [master];
+GO
+CREATE LOGIN grocery WITH PASSWORD = '123';
+GO
+USE grocery;
+GO
+CREATE USER grocery FOR LOGIN grocery;
+GO
+GRANT SELECT, INSERT, UPDATE, DELETE ON SCHEMA::[dbo] TO grocery;
+GO
